@@ -39,7 +39,8 @@ void Transport::read_ifconfig(const char * ifaddr_file) {
     strcpy(ifaddr[cnt],&line[0]);
 		printf("%ld: %s\n",cnt,ifaddr[cnt]);
 		cnt++;
-	}
+	} 
+  printf("cnt = %d, g_total_node_cnt = %d\n", (int)cnt, (int)g_total_node_cnt);
   assert(cnt == g_total_node_cnt);
 }
 

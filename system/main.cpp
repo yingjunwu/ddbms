@@ -59,6 +59,7 @@ void parser(int argc, char * argv[]);
 
 int main(int argc, char* argv[])
 {
+  printf("here=======================================\n");
 	// 0. initialize global data structure
 	parser(argc, argv);
 #if SEED != 0
